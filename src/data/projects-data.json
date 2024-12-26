@@ -1,0 +1,140 @@
+[
+  {
+    "image": "/img/image-thumb-projeto-hotel.png",
+    "imageAlt": "Imagem do projeto Hotel Daifa",
+    "projectName": "Hotel Daifa",
+    "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
+    "projectDescriptionEN": "Hotel Daifa website developed using Next.js, TypeScript, and TailwindCSS, ensuring a scalable, efficient, and responsive solution. Additionally, Builder.io was integrated as a headless CMS to manage blog content. Libraries such as React Day Picker were used for date selection, Nodemailer for email sending, and Swiper for the image carousel.",
+    "techs": [
+      {
+        "name": "Next.js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "tailwind"
+      }
+    ],
+    "liveLink": "https://hotel-daifa.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/hotel-daifa"
+  },
+  {
+    "image": "/img/image-thumb-projeto-portfolio.png",
+    "imageAlt": "Imagem do projeto Portfólio",
+    "projectName": "Portfólio",
+    "projectDescription": "Portfólio pessoal utilizando Next.js com TypeScript para garantir alto desempenho e otimização SEO. Para a estilização, utilizei Tailwind CSS, que me permitiu criar uma interface responsiva e atraente. Utilizei também a biblioteca next-intl para implementar a internacionalização.",
+    "projectDescriptionEN": "Personal portfolio developed with Next.js and TypeScript to ensure high performance and SEO optimization. For styling, I used Tailwind CSS, which allowed me to create a responsive and visually appealing interface. Additionally, I implemented internationalization using the next-intl library.",
+    "techs": [
+      {
+        "name": "Next.js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "tailwind"
+      }
+    ],
+    "liveLink": "https://hotel-daifa.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/hotel-daifa"
+  },
+  {
+    "image": "/img/image-thumb-projeto-best-pizza.png",
+    "imageAlt": "Imagem do projeto Best Pizza",
+    "projectName": "Best Pizza",
+    "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
+    "projectDescriptionEN": "Hotel Daifa website developed using Next.js, TypeScript, and TailwindCSS, ensuring a scalable, efficient, and responsive solution. Additionally, Builder.io was integrated as a headless CMS to manage blog content. Libraries such as React Day Picker were used for date selection, Nodemailer for email sending, and Swiper for the image carousel.",
+    "techs": [
+      {
+        "name": "Next.js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "tailwind"
+      }
+    ],
+    "liveLink": "https://best-pizza-dsl.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/best-pizza"
+  },
+  {
+    "image": "/img/image-thumb-projeto-rick-morty.png",
+    "imageAlt": "Imagem do projeto Rick And Morty API",
+    "projectName": "Rick and Morty API",
+    "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
+    "projectDescriptionEN": "Hotel Daifa website developed using Next.js, TypeScript, and TailwindCSS, ensuring a scalable, efficient, and responsive solution. Additionally, Builder.io was integrated as a headless CMS to manage blog content. Libraries such as React Day Picker were used for date selection, Nodemailer for email sending, and Swiper for the image carousel.",
+    "techs": [
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "js"
+      },
+      {
+        "name": "Styled",
+        "icon": "styled"
+      }
+    ],
+    "liveLink": "https://best-pizza-dsl.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/best-pizza"
+  },
+  {
+    "image": "/img/image-thumb-projeto-quiz-app.png",
+    "imageAlt": "Imagem do projeto Quiz App",
+    "projectName": "Quiz App",
+    "projectDescription": "Quiz desenvolvido durante o curso Dev Sem Limites, utilizando React, TypeScript e CSS Modules com o objetivo de praticar as tecnologias e consolidar o entendimento de SPAs, bem como o conceito de componentização e gerenciamento de estados com React.",
+    "projectDescriptionEN": "Quiz developed during the Dev Sem Limites course, using React, TypeScript, and CSS Modules with the goal of practicing these technologies and solidifying the understanding of SPAs, as well as the concepts of componentization and state management in React.",
+    "techs": [
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "Vite",
+        "icon": "vite"
+      }
+    ],
+    "liveLink": "https://best-pizza-dsl.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/best-pizza"
+  },
+  {
+    "image": "/img/image-thumb-projeto-devbooks.png",
+    "imageAlt": "Imagem do projeto devbooks",
+    "projectName": "Devbooks",
+    "projectDescription": "Projeto Devbooks desenvolvido com React, TypeScript e Styled-components. O projeto foi realizado durante o curso Dev Sem Limites, com o objetivo de aprimorar o conhecimento de consultas à APIs, utlizando a API de livros do Google. Além da utilização da biblioteca Styled-components que nos permite criar componentes estilizados, facilidanto o processo de desenvolvimento.",
+    "projectDescriptionEN": "Devbooks project developed with React, TypeScript, and Styled-components. This project was completed during the Dev Sem Limites course to enhance knowledge of API requests using the Google Books API. Additionally, the Styled-components library was used, enabling the creation of styled components and streamlining the development process.",
+    "techs": [
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "Vite",
+        "icon": "vite"
+      }
+    ],
+    "liveLink": "https://best-pizza-dsl.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/best-pizza"
+  }
+]

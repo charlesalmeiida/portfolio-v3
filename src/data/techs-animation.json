@@ -1,0 +1,68 @@
+[
+  {
+    "name": "HTML5",
+    "icon": "/svg/techs-animation/logo-html.svg",
+    "width": 12,
+    "height": 24
+  },
+  {
+    "name": "CSS3",
+    "icon": "/svg/techs-animation/logo-css.svg",
+    "width": 12,
+    "height": 24
+  },
+  {
+    "name": "JavaScript",
+    "icon": "/svg/techs-animation/logo-js.svg",
+    "width": 14,
+    "height": 24
+  },
+  {
+    "name": "TypeScript",
+    "icon": "/svg/techs-animation/logo-ts.svg",
+    "width": 14,
+    "height": 14
+  },
+  {
+    "name": "React",
+    "icon": "/svg/techs-animation/logo-react.svg",
+    "width": 17,
+    "height": 20
+  },
+  {
+    "name": "Next.js",
+    "icon": "/svg/techs-animation/logo-nextjs.svg",
+    "width": 24,
+    "height": 4
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "/svg/techs-animation/logo-bootstrap.svg",
+    "width": 20,
+    "height": 16
+  },
+  {
+    "name": "Tailwind",
+    "icon": "/svg/techs-animation/logo-tailwind.svg",
+    "width": 20,
+    "height": 12
+  },
+  {
+    "name": "SCSS",
+    "icon": "/svg/techs-animation/logo-scss.svg",
+    "width": 11,
+    "height": 13
+  },
+  {
+    "name": "Vite",
+    "icon": "/svg/techs-animation/logo-vite.svg",
+    "width": 14,
+    "height": 15
+  },
+  {
+    "name": "Styled",
+    "icon": "/svg/techs-animation/logo-styled.svg",
+    "width": 26,
+    "height": 11
+  }
+]
