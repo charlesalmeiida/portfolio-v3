@@ -5,6 +5,7 @@ import { Container } from "@/components/container"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
+import { motion } from "motion/react"
 
 function MyComponent() {
   const el = useRef<HTMLSpanElement | null>(null)
@@ -36,7 +37,13 @@ export function Hero() {
       <section className="pt-36 pb-20 lg:pb-28">
         <Container>
           <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between items-center">
-            <div className="space-y-4">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="space-y-4"
+            >
               <div className="space-y-6">
                 <span className="text-gray03 leading-5 tracking-[2px]">
                   Olá, eu sou{" "}
@@ -61,15 +68,21 @@ export function Hero() {
                   LinkedIn
                 </Button>
               </div>
-            </div>
-            <div className="md:-mr-14">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="md:-mr-14"
+            >
               <Image
                 src={"/svg/bg-hero.svg"}
                 width={593}
                 height={494}
                 alt="Imagem da seção Hero"
               />
-            </div>
+            </motion.div>
           </div>
         </Container>
       </section>

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="bg-blueDark pt-20 pb-4">
+    <footer className="bg-blueDark pt-20 pb-4" id="contato">
       <Container>
         <div className="flex flex-col text-center gap-14 md:gap-0 md:flex-row items-center justify-between md:items-start">
           <div className="space-y-6 flex flex-col items-center md:items-start text-gray01">

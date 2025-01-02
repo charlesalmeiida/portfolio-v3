@@ -1,18 +1,18 @@
 [
   {
     "name": "Cases",
-    "href": "/"
+    "href": "#cases"
   },
   {
     "name": "Quem sou",
-    "href": "/"
+    "href": "#about"
   },
   {
     "name": "Blog",
-    "href": "/"
+    "href": "#blog"
   },
   {
     "name": "Contato",
-    "href": "/"
+    "href": "#contato"
   }
 ]
