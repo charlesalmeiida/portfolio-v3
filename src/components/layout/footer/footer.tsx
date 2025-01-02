@@ -7,8 +7,8 @@ export function Footer() {
   return (
     <footer className="bg-blueDark pt-20 pb-4">
       <Container>
-        <div className="flex justify-between items-start">
-          <div className="space-y-6 text-gray01">
+        <div className="flex flex-col text-center gap-14 md:gap-0 md:flex-row items-center justify-between md:items-start">
+          <div className="space-y-6 flex flex-col items-center md:items-start text-gray01">
             <h2 className="font-semibold">Entre em contato:</h2>
             <Link
               className="font-semibold underline font-inter text-xl block"
@@ -27,7 +27,7 @@ export function Footer() {
                 ))}
               </ul>
             </nav>
-            <div className="flex items-center gap-14 justify-end mt-20">
+            <div className="flex items-center gap-14 justify-center md:justify-end mt-20">
               <Image
                 src={"/svg/icon-linkeding-white.svg"}
                 width={20}
@@ -45,7 +45,14 @@ export function Footer() {
         </div>
         <span className="text-gray01 mt-14 text-center font-inter text-sm opacity-80 w-full block">
           Desenvolvido por{" "}
-          <Link target="_blank" className="underline" href={"https://github.com/charlesalmeiida"}>Charles</Link> © 2025
+          <Link
+            target="_blank"
+            className="underline"
+            href={"https://github.com/charlesalmeiida"}
+          >
+            Charles
+          </Link>{" "}
+          © 2025
         </span>
       </Container>
     </footer>

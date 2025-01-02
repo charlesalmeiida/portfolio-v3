@@ -1,8 +1,11 @@
-import BuilderDevTools from "@builder.io/dev-tools/next";
-import type { NextConfig } from "next";
+import BuilderDevTools from "@builder.io/dev-tools/next"
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = BuilderDevTools()({
-  /* config options here */
-});
+  images: {
+    domains: ["cdn.builder.io"],
+  },
+  reactStrictMode: true,
+})
 
-export default nextConfig;
+export default nextConfig

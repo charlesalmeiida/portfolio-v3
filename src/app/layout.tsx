@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={`${inter} ${poppins} antialiased`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

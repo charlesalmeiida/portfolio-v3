@@ -30,13 +30,12 @@ function MyComponent() {
   return <span ref={el} />
 }
 
-
 export function Hero() {
   return (
     <main>
-      <section className="pt-36 pb-28">
+      <section className="pt-36 pb-20 lg:pb-28">
         <Container>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between items-center">
             <div className="space-y-4">
               <div className="space-y-6">
                 <span className="text-gray03 leading-5 tracking-[2px]">
@@ -48,7 +47,7 @@ export function Hero() {
                   <MyComponent />
                 </h1>
               </div>
-              <p className="text-lg text-gray03 opacity-70 leading-7 max-w-[520px]">
+              <p className="text-base md:text-lg text-gray03 opacity-70 leading-7 md:max-w-[520px]">
                 Com formação em Sistemas de Informação e conhecimentos em UX e
                 UI Design. Conhecimentos esses que combinados me permitem criar
                 experiências digitais que são tanto esteticamente agradáveis
@@ -63,7 +62,7 @@ export function Hero() {
                 </Button>
               </div>
             </div>
-            <div className="-mr-14">
+            <div className="md:-mr-14">
               <Image
                 src={"/svg/bg-hero.svg"}
                 width={593}

@@ -1,6 +1,7 @@
 [
   {
     "image": "/img/image-thumb-projeto-hotel.png",
+    "imageLg": "/img/image-lg-projeto-hotel.png",
     "imageAlt": "Imagem do projeto Hotel Daifa",
     "projectName": "Hotel Daifa",
     "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
@@ -24,6 +25,7 @@
   },
   {
     "image": "/img/image-thumb-projeto-portfolio.png",
+    "imageLg": "/img/image-lg-projeto-portfolio.png",
     "imageAlt": "Imagem do projeto Portfólio",
     "projectName": "Portfólio",
     "projectDescription": "Portfólio pessoal utilizando Next.js com TypeScript para garantir alto desempenho e otimização SEO. Para a estilização, utilizei Tailwind CSS, que me permitiu criar uma interface responsiva e atraente. Utilizei também a biblioteca next-intl para implementar a internacionalização.",
@@ -47,10 +49,11 @@
   },
   {
     "image": "/img/image-thumb-projeto-best-pizza.png",
+    "imageLg": "/img/image-lg-projeto-best-pizza.png",
     "imageAlt": "Imagem do projeto Best Pizza",
     "projectName": "Best Pizza",
-    "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
-    "projectDescriptionEN": "Hotel Daifa website developed using Next.js, TypeScript, and TailwindCSS, ensuring a scalable, efficient, and responsive solution. Additionally, Builder.io was integrated as a headless CMS to manage blog content. Libraries such as React Day Picker were used for date selection, Nodemailer for email sending, and Swiper for the image carousel.",
+    "projectDescription": "Best Pizza: Site de delivery de pizzas desenvolvido com Next.js, TailwindCSS e Shadcn UI, garantindo uma experiência responsiva e moderna. A integração com a API do Stripe gerencia pagamentos e listagem de produtos de forma eficiente.",
+    "projectDescriptionEN": "Best Pizza: Pizza delivery website built with Next.js, TailwindCSS, and Shadcn UI, providing a modern and responsive user experience. Integrated with Stripe API for efficient payment processing and product management. Project developed during the DSL Week by the Dev Sem Limites course.",
     "techs": [
       {
         "name": "Next.js",
@@ -70,10 +73,11 @@
   },
   {
     "image": "/img/image-thumb-projeto-rick-morty.png",
+    "imageLg": "/img/image-lg-projeto-rick-and-morty.png",
     "imageAlt": "Imagem do projeto Rick And Morty API",
     "projectName": "Rick and Morty API",
-    "projectDescription": "Site do Hotel Daifa desenvolvido em Next.js, TypeScript e TailwindCSS, garantindo uma solução escalável, eficiente e responsiva. Além disso, integrei o Builder.io como headless CMS para gerenciar o conteúdo do blog. Foi utilizado também bibliotecas como o React Day Picker para fazer a seleção de datas, o nodemailer para envio de e-mails e o Swiper para carrossel de imagens.",
-    "projectDescriptionEN": "Hotel Daifa website developed using Next.js, TypeScript, and TailwindCSS, ensuring a scalable, efficient, and responsive solution. Additionally, Builder.io was integrated as a headless CMS to manage blog content. Libraries such as React Day Picker were used for date selection, Nodemailer for email sending, and Swiper for the image carousel.",
+    "projectDescription": "Rick and Morty API: Projeto desenvolvido com React, Styled-components e Axios para consultar a API REST do Rick and Morty. Oferece uma interface visualmente atraente e responsiva para explorar personagens, episódios e locais da série.",
+    "projectDescriptionEN": "Rick and Morty API: Project built with React, Styled-components, and Axios for querying the Rick and Morty REST API. It delivers a visually appealing and responsive interface to explore characters, episodes, and locations from the series.",
     "techs": [
       {
         "name": "React",
@@ -88,11 +92,12 @@
         "icon": "styled"
       }
     ],
-    "liveLink": "https://best-pizza-dsl.vercel.app",
-    "repoLink": "https://github.com/charlesalmeiida/best-pizza"
+    "liveLink": "https://rickandmorty-api-reactjs.netlify.app",
+    "repoLink": "https://github.com/charlesalmeiida/rick-and-morty-api"
   },
   {
     "image": "/img/image-thumb-projeto-quiz-app.png",
+    "imageLg": "/img/image-lg-projeto-quiz-app.png",
     "imageAlt": "Imagem do projeto Quiz App",
     "projectName": "Quiz App",
     "projectDescription": "Quiz desenvolvido durante o curso Dev Sem Limites, utilizando React, TypeScript e CSS Modules com o objetivo de praticar as tecnologias e consolidar o entendimento de SPAs, bem como o conceito de componentização e gerenciamento de estados com React.",
@@ -116,6 +121,7 @@
   },
   {
     "image": "/img/image-thumb-projeto-devbooks.png",
+    "imageLg": "/img/image-lg-projeto-devbooks.png",
     "imageAlt": "Imagem do projeto devbooks",
     "projectName": "Devbooks",
     "projectDescription": "Projeto Devbooks desenvolvido com React, TypeScript e Styled-components. O projeto foi realizado durante o curso Dev Sem Limites, com o objetivo de aprimorar o conhecimento de consultas à APIs, utlizando a API de livros do Google. Além da utilização da biblioteca Styled-components que nos permite criar componentes estilizados, facilidanto o processo de desenvolvimento.",

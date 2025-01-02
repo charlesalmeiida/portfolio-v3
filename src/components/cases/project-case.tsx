@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { TagTech } from "./tag-tech"
 import { BtnLink } from "../button"
+import { Project } from "./cases"
 
 interface Techs {
   name: string
@@ -13,7 +14,10 @@ interface ProjectCaseProps {
   projectName: string
   projectDescription: string
   techs: Techs[]
-  handleModal: () => void
+  liveLink: string
+  repoLink: string
+  imageLg: string
+  handleModal: (project: Project) => void
 }
 
 export function ProjectCase({
@@ -22,10 +26,24 @@ export function ProjectCase({
   projectName,
   projectDescription,
   techs,
-  handleModal
+  liveLink,
+  repoLink,
+  imageLg,
+  handleModal,
 }: ProjectCaseProps) {
   return (
-    <div onClick={handleModal} className="cursor-pointer border border-[#DCDCDC] w-fit rounded-md hover:scale-105 transition-all">
+    <div
+      onClick={() =>
+        handleModal({
+          projectName,
+          projectDescription,
+          imageLg,
+          liveLink,
+          repoLink,
+        })
+      }
+      className="cursor-pointer border border-[#DCDCDC] w-fit rounded-md hover:scale-105 transition-all"
+    >
       <Image src={image} alt={alt} width={384} height={229} />
       <div className="pl-4 pb-6">
         <div className="mt-4 flex items-center gap-2">

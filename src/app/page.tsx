@@ -12,9 +12,9 @@ import { Hero } from "@/components/home/hero"
 export default function Home() {
   return (
     <>
-      {/* <Hero />
+      <Hero />
 
-      <section className="bg-blueLight py-6">
+      {/* <section className="bg-blueLight py-6">
         <Container>
           <div className="scroll-wrapper">
             <div className="scroll-animation scroll-content">
