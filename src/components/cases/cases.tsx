@@ -31,7 +31,7 @@ export function Cases() {
   const visibleProjets = showAll ? projectCase : projectCase.slice(0, 3)
 
   return (
-    <section className="py-28 relative" id="cases">
+    <section className="py-14 md:py-28 relative" id="cases">
       <Container>
         <div className="text-center space-y-4">
           <span className="text-gray03 leading-5 tracking-[2px]">PROJETOS</span>

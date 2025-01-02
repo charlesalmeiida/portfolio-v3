@@ -10,7 +10,7 @@ export function About() {
   return (
     <section id="about">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -45,7 +45,7 @@ export function About() {
             transition={{ duration: 1, delay: 0.5 }}
             className="max-w-lg"
           >
-            <ul className="grid grid-cols-3 gap-y-4 gap-x-2">
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-2">
               {skills.map((skill) => (
                 <li key={skill.name}>
                   <TechSkill

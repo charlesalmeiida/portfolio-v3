@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 
 export function BlogSection() {
   return (
-    <section className="py-28" id="blog">
+    <section className="py-14 md:py-28" id="blog">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,18 +15,18 @@ export function BlogSection() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <div className="flex justify-between items-end">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
             <div className="space-y-4">
               <span className="font-poppins text-gray03 tracking-[2px]">
                 BLOG
               </span>
               <h2 className="font-semibold">Posts recentes</h2>
             </div>
-            <div>
+            <div className="hidden  ">
               <BtnLink>Todas as publicações</BtnLink>
             </div>
           </div>
-          <div className="mt-14 flex justify-between">
+          <div className="mt-8 md:mt-14 flex flex-wrap gap-8 lg:gap-0 max-w-[1216px] justify-center md:justify-between">
             <BlogCard />
             <BlogCard />
             <BlogCard />
