@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "tag": "Hello, I'm",
+    "p": "I have a degree in Information Systems and knowledge in UX and UI Design. These knowledge combined allow me to create digital experiences that are both aesthetically pleasing and easy to use."
+  },
+  "Cases": {
+    "deploy": "Online project",
+    "rep": "Repository"
+  },
+  "About": {
+    "tag": "Hello, nice to meet you",
+    "subtitle": "Front-end developer",
+    "p": "A dedicated professional with a Bachelor's degree in Information Systems from the Federal University of Alagoas. As a Front-end Developer, I bring experience in creating intuitive interfaces by combining knowledge of Visual Design and User Experience Design (UX Design). Committed to delivering high-quality code and solving problems effectively."
+  },
+  "Footer": {
+    "title": "Get in touch:",
+    "by": "Developed by"
+  }
+}

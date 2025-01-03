@@ -1,18 +1,22 @@
 [
   {
-    "name": "Cases",
+    "name": "Projetos",
+    "nameEn": "Cases",
     "href": "#cases"
   },
   {
     "name": "Quem sou",
+    "nameEn": "About",
     "href": "#about"
   },
   {
     "name": "Blog",
+    "nameEn": "Blog",
     "href": "#blog"
   },
   {
     "name": "Contato",
+    "nameEn": "Contact",
     "href": "#contato"
   }
 ]

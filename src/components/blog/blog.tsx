@@ -1,9 +1,9 @@
 "use client"
 
-import { BlogCard } from "@/components/blog"
 import { BtnLink } from "@/components/button"
 import { Container } from "@/components/container"
 import { motion } from "motion/react"
+import { Posts } from "./posts"
 
 export function BlogSection() {
   return (
@@ -26,12 +26,7 @@ export function BlogSection() {
               <BtnLink>Todas as publicações</BtnLink>
             </div>
           </div>
-          <div className="mt-8 md:mt-14 flex flex-wrap gap-8 lg:gap-0 max-w-[1216px] justify-center md:justify-between">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-          </div>
+          <Posts />
         </motion.div>
       </Container>
     </section>

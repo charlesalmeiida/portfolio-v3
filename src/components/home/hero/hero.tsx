@@ -6,17 +6,21 @@ import Image from "next/image"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
 import { motion } from "motion/react"
+import { useTranslations, useLocale } from "next-intl"
 
 function MyComponent() {
   const el = useRef<HTMLSpanElement | null>(null)
+  const locale = useLocale()
 
   useEffect(() => {
     if (el.current) {
       const typed = new Typed(el.current, {
         strings: [
-          "Desenvolvedor Front-end",
-          "Desenvolvedor React",
-          "Desenvolvedor Next.js",
+          `${
+            locale === "en" ? "Front-end Developer" : "Desenvolvedor Front-end"
+          }`,
+          `${locale === "en" ? "React Developer" : "Desenvolvedor React"}`,
+          `${locale === "en" ? "Next.js Developer" : "Desenvolvedor Next.js"}`,
         ],
         typeSpeed: 70,
         loop: true,
@@ -32,6 +36,8 @@ function MyComponent() {
 }
 
 export function Hero() {
+  const t = useTranslations("Hero")
+
   return (
     <main>
       <section className="pt-36 pb-20 lg:pb-28">
@@ -46,7 +52,7 @@ export function Hero() {
             >
               <div className="space-y-6">
                 <span className="text-gray03 leading-5 tracking-[2px]">
-                  Olá, eu sou{" "}
+                  {t("tag")}{" "}
                   <strong className="font-semibold">Charles Almeida</strong>
                   👋🏻
                 </span>
@@ -55,10 +61,7 @@ export function Hero() {
                 </h1>
               </div>
               <p className="text-base md:text-lg text-gray03 opacity-70 leading-7 md:max-w-[520px]">
-                Com formação em Sistemas de Informação e conhecimentos em UX e
-                UI Design. Conhecimentos esses que combinados me permitem criar
-                experiências digitais que são tanto esteticamente agradáveis
-                quanto fáceis de usar.
+                {t("p")}
               </p>
               <div className="flex items-center gap-6">
                 <Button color="primary" icon="github">

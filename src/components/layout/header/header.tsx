@@ -8,12 +8,15 @@ import { ChangeLanguage } from "./change-language"
 import { Turn as Hamburger } from "hamburger-react"
 import { useState } from "react"
 import { MobileMenu } from "./mobile-menu"
+import { useLocale } from "next-intl"
 
 export function Header() {
   const [isOpen, setOpen] = useState(false)
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   const handleMenu = () => setMenuOpen(!isMenuOpen)
+
+  const locale = useLocale()
 
   return (
     <header className="py-8 drop-shadow-sm fixed w-full top-0 z-50 bg-white">
@@ -31,7 +34,7 @@ export function Header() {
                     className="text-gray03 opacity-80 hover:opacity-100"
                     href={link.href}
                   >
-                    {link.name}
+                    {locale === "pt" ? link.name : link.nameEn}
                   </Link>
                 </li>
               ))}

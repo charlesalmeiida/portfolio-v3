@@ -1,12 +1,17 @@
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
-import Link from "next/link"
+import { useLocale } from "next-intl"
 
 export function ChangeLanguage() {
+  const locale = useLocale()
+
   return (
     <div className="flex items-center gap-1">
       <Link
-        className="flex items-center gap-2 text-sm text-gray01 sm:text-gray03"
-        href={"/"}
+        className={`flex items-center gap-2 text-sm text-gray01 ${
+          locale === "pt" ? "sm:text-gray03" : "sm:text-gray02"
+        }`}
+        href={"pt"}
       >
         <Image
           src={"/svg/br-flag.svg"}
@@ -18,8 +23,10 @@ export function ChangeLanguage() {
       </Link>
       <span className="text-gray01 sm:text-gray03">/</span>
       <Link
-        className="flex items-center gap-2 text-sm text-gray01 sm:text-gray02"
-        href={"/"}
+        className={`flex items-center gap-2 text-sm text-gray01 ${
+          locale === "en" ? "sm:text-gray03" : "sm:text-gray02"
+        }`}
+        href={"en"}
       >
         <Image
           src={"/svg/eua-flag.svg"}

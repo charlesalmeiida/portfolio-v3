@@ -1,5 +1,8 @@
 import BuilderDevTools from "@builder.io/dev-tools/next"
+import createNextIntlPlugin from "next-intl/plugin"
 import type { NextConfig } from "next"
+
+const withNextIntl = createNextIntlPlugin()
 
 const nextConfig: NextConfig = BuilderDevTools()({
   images: {
@@ -8,4 +11,4 @@ const nextConfig: NextConfig = BuilderDevTools()({
   reactStrictMode: true,
 })
 
-export default nextConfig
+export default withNextIntl(nextConfig)

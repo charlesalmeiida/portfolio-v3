@@ -7,6 +7,7 @@ import { ProjectCase } from "./project-case"
 import projectCase from "@/data/projects-data.json"
 import { ModalCase } from "./modal-case"
 import { motion } from "motion/react"
+import { useLocale } from "next-intl"
 
 export interface Project {
   projectName: string
@@ -30,6 +31,8 @@ export function Cases() {
 
   const visibleProjets = showAll ? projectCase : projectCase.slice(0, 3)
 
+  const locale = useLocale()
+
   return (
     <section className="py-14 md:py-28 relative" id="cases">
       <Container>
@@ -51,7 +54,11 @@ export function Cases() {
               key={project.projectName}
               alt={project.imageAlt}
               image={project.image}
-              projectDescription={project.projectDescription}
+              projectDescription={
+                locale === "en"
+                  ? project.projectDescriptionEN
+                  : project.projectDescription
+              }
               projectName={project.projectName}
               techs={project.techs}
               handleModal={handleModal}
@@ -71,7 +78,9 @@ export function Cases() {
         )}
         <div className="flex justify-center mt-14">
           <Button handleProjects={handleProjects} color="secondary">
-            {showAll ? "Mostrar menos" : "Mostrar mais"}
+            {showAll
+              ? `${locale === "en" ? "Show less" : "Mostrar menos"}`
+              : `${locale === "en" ? "Show more" : "Mostrar mais"}`}
           </Button>
         </div>
       </Container>

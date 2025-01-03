@@ -5,8 +5,11 @@ import { Container } from "@/components/container"
 import skills from "@/data/techs-animation.json"
 import { TechSkill } from "../skills"
 import { motion } from "motion/react"
+import { useTranslations } from "next-intl"
 
 export function About() {
+  const t = useTranslations("About")
+
   return (
     <section id="about">
       <Container>
@@ -19,20 +22,15 @@ export function About() {
           >
             <div className="space-y-2">
               <span className="text-gray03 font-inter text-lg font-semibold">
-                Olá, prazer 👋🏻
+                {t("tag")}
               </span>
               <h2 className="font-semibold">Charles Almeida</h2>
               <h4 className="font-inter font-semibold text-lg text-gray03">
-                Desenvolvedor Front-end
+                {t("subtitle")}
               </h4>
             </div>
             <p className="text-gray03 opacity-80 mt-6 mb-8 max-w-lg">
-              Um profissional dedicado com bacharelado em Sistemas de Informação
-              pela Universidade Federal de Alagoas. Como desenvolvedor
-              Front-end, trago experiência na criação de interfaces intuitivas,
-              ao unir os conhecimentos de Design Visual e Design de Experiência
-              do Usuário (UX Design). Comprometido em fornecer código de
-              qualidade e solucionar problemas.
+              {t("p")}
             </p>
             <Button icon="file" color="secondary">
               Download CV

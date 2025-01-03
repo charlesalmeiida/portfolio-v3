@@ -5,6 +5,8 @@ import { Container } from "@/components/container"
 import { useRouter } from "next/navigation"
 import { use, useEffect, useState } from "react"
 import Image from "next/image"
+import { Posts } from "@/components/blog/posts"
+import { BtnLink } from "@/components/button"
 
 interface Post {
   title: string
@@ -81,10 +83,16 @@ export default function BlogArticle({
             height={486}
           />
         </div>
-        <div>
-          <p>
-            {post.body}
-          </p>
+        <div
+          className="mt-14 max-w-[700px] leading-6 text-blog font-inter text-base mx-auto opacity-90 text-justify"
+          dangerouslySetInnerHTML={{ __html: post.body }}
+        />
+        <div className="pt-28">
+          <div className="flex items-end justify-between">
+            <h2 className="font-semibold">Posts recentes</h2>
+            <BtnLink>Todas as publicações</BtnLink>
+          </div>
+          <Posts />
         </div>
       </Container>
     </section>

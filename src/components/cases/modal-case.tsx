@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Project } from "./cases"
+import { useTranslations } from "next-intl"
 
 interface ModalCaseProps {
   handleModal: (project: Project | null) => void
@@ -19,6 +20,8 @@ export function ModalCase({
   projetTitle,
   repoLink,
 }: ModalCaseProps) {
+  const t = useTranslations("Cases")
+
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-50 z-10"></div>
@@ -45,18 +48,18 @@ export function ModalCase({
             </p>
             <div className="pl-4 space-x-4 mt-6 pb-6">
               <Link
-                className="text-blue font-inter text-base font-medium underline"
+                className="text-blueLight font-inter text-base font-medium underline"
                 href={liveLink}
                 target="_blank"
               >
-                Projeto online
+                {t("deploy")}
               </Link>
               <Link
-                className="font-inter text-base font-medium underline opacity-80 text-gray03"
+                className="font-inter text-base font-medium underline opacity-80 text-blueLight"
                 href={repoLink}
                 target="_blank"
               >
-                Repositório
+                {t("rep")}
               </Link>
             </div>
           </div>

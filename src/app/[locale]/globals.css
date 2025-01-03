@@ -54,3 +54,8 @@
 .scroll-content {
   display: flex;
 }
+
+.text-blog ul {
+  list-style: disc !important;
+  padding-left: 16px;
+}

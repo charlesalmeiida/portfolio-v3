@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "tag": "Olá, eu sou",
+    "p": "Com formação em Sistemas de Informação e conhecimentos em UX e UI Design. Conhecimentos esses que combinados me permitem criar experiências digitais que são tanto esteticamente agradáveis quanto fáceis de usar."
+  },
+  "Cases": {
+    "deploy": "Projeto online",
+    "rep": "Repositório"
+  },
+  "About": {
+    "tag": "Olá, prazer",
+    "subtitle": "Desenvolvedor Front-end",
+    "p": "Um profissional dedicado com bacharelado em Sistemas de Informação pela Universidade Federal de Alagoas. Como desenvolvedor Front-end, trago experiência na criação de interfaces intuitivas, ao unir os conhecimentos de Design Visual e Design de Experiência do Usuário (UX Design). Comprometido em fornecer código de qualidade e solucionar problemas."
+  },
+  "Footer": {
+    "title": "Entre em contato:",
+    "by": "Desenvolvido por"
+  }
+}
