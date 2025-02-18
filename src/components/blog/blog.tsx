@@ -4,8 +4,9 @@ import { BtnLink } from "@/components/button"
 import { Container } from "@/components/container"
 import { motion } from "motion/react"
 import { Posts } from "./posts"
+import { SanityDocument } from "next-sanity"
 
-export function BlogSection() {
+export function BlogSection({ posts }: { posts: SanityDocument[] }) {
   return (
     <section className="py-14 md:py-28" id="blog">
       <Container>
@@ -26,7 +27,7 @@ export function BlogSection() {
               <BtnLink>Todas as publicações</BtnLink>
             </div>
           </div>
-          <Posts />
+          <Posts posts={posts} />
         </motion.div>
       </Container>
     </section>

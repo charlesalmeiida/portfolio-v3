@@ -1,5 +1,29 @@
 [
   {
+    "image": "/img/image-thumb-projeto-paqueta.png",
+    "imageLg": "/img/image-lg-projeto-paqueta.png",
+    "imageAlt": "Imagem do projeto Paquetá Calçados",
+    "projectName": "Paquetá Calçados",
+    "projectDescription": "O projeto Paquetá Calçados é um e-commerce de calçados desenvolvido com base no desafio proposto pelo site BR Challenges. Foi construído utilizando Next.js com TypeScript e Tailwind CSS para estilização. Para o gerenciamento de estado global, como funcionalidades de carrinho e lista de favoritos, foi utilizado Zustand. Além disso, a biblioteca shadcn/ui foi empregada para criar componentes de interface reutilizáveis e altamente personalizáveis, garantindo uma experiência de usuário consistente e moderna.",
+    "projectDescriptionEN": "The Paquetá Calçados project is an e-commerce platform for footwear, developed based on the challenge proposed by BR Challenges. It was built using Next.js with TypeScript and Tailwind CSS for styling. For global state management, such as cart and favorites list functionalities, Zustand was used. Additionally, the shadcn/ui library was employed to create reusable and highly customizable UI components, ensuring a consistent and modern user experience.",
+    "techs": [
+      {
+        "name": "Next.js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "tailwind"
+      }
+    ],
+    "liveLink": "https://calcados-paqueta.vercel.app",
+    "repoLink": "https://github.com/charlesalmeiida/paqueta-calcados"
+  },
+  {
     "image": "/img/image-thumb-projeto-hotel.png",
     "imageLg": "/img/image-lg-projeto-hotel.png",
     "imageAlt": "Imagem do projeto Hotel Daifa",

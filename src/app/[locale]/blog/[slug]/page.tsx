@@ -1,20 +1,35 @@
 import { DateAndTheme } from "@/components/blog/date-and-theme"
 import { Container } from "@/components/container"
+import { client } from "@/sanity/lib/client"
+import { PortableText, SanityDocument } from "next-sanity"
 import Image from "next/image"
 
-export default function Blog() {
+const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`
+
+const options = { next: { revalidate: 30 } }
+
+export default async function Blog({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const post = await client.fetch<SanityDocument>(
+    POST_QUERY,
+    await params,
+    options
+  )
+
   return (
     <section className="pb-28 pt-40">
       <Container>
         <div className="flex flex-col items-center space-y-8">
           <DateAndTheme />
           <div className="space-y-6">
-            <h2 className="font-semibold mx-auto text-gray03 text-center max-w-blogTitle">
-              Wrapped 2022: Look back on a year of progress
+            <h2 className="font-semibold mx-auto text-gray03 text-center max-w-full">
+              {post.title}
             </h2>
-            <p className="text-gray03 text-xl max-w-lg opacity-80 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium soluta vitae labore quam?
+            <p className="text-gray03 text-xl max-w-xl opacity-80 text-center">
+              {post.subtitle}
             </p>
           </div>
         </div>
@@ -27,48 +42,9 @@ export default function Blog() {
             className="mx-auto mt-14"
           />
         </div>
-        <p className="max-w-content mx-auto mt-14">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. 8 Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="prose max-w-content space-y-4 mx-auto mt-14">
+          {Array.isArray(post.body) && <PortableText value={post.body} />}
+        </div>
       </Container>
     </section>
   )
