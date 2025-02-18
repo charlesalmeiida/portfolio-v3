@@ -13,15 +13,20 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
   const messages = await getMessages()
+  const locale = (await params).locale
 
   return (
-    <html style={{ scrollBehavior: "smooth" }} lang={locale}>
+    <html
+      suppressHydrationWarning
+      style={{ scrollBehavior: "smooth" }}
+      lang={locale}
+    >
       <body className={`${inter} ${poppins} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
