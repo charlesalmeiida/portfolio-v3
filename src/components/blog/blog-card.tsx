@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function BlogCard() {
   return (
-    <Link href={"/pt/blog/react-dom-virtual"}>
+    <Link href={"/pt/blog"}>
       <Image
         src={"/img/thumb-blog.png"}
         width={280}

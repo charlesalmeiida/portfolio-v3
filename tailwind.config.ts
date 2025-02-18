@@ -14,6 +14,10 @@ export default {
       xl: "1440px",
     },
     extend: {
+      maxWidth: {
+        blogTitle: "530px",
+        content: "739px",
+      },
       animation: {
         scroll: "scroll 15s linear infinite",
       },
@@ -40,6 +44,10 @@ export default {
         gray03: "#212529",
         gray02: "#ADB5BD",
         gray01: "#F8F9FA",
+        theme: "rgba(33, 230, 193, 0.30)",
+      },
+      padding: {
+        theme: "10px",
       },
     },
   },
